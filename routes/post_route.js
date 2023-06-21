@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcryptjs = require("bcryptjs");
 const mongoose = require("mongoose");
-const PostModel = require("../models/Post_model");
+const PostModel = require("../models/post_model");
 const protectedRoute = require("../middleware/protectedResource");
 //All user posts
 router.get("/allposts", (req, res) => {
